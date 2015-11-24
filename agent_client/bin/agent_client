@@ -30,3 +30,4 @@ mbus.user = mbus.password = nil
 api = Bosh::Agent::Client.create(mbus.to_s, 'user' => user, 'password' => password)
 
 puts api.send(command.to_sym)
+
